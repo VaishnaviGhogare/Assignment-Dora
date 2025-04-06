@@ -1,5 +1,5 @@
 # Assignment-Dora
-# 🌱 PoCRA Mini Simulator for Point-wise Daily Soil Water Balance
+# PoCRA Mini Simulator for Point-wise Daily Soil Water Balance
 
 This project simulates a daily soil water balance at an imaginary location based on rainfall data, soil type, and crop uptake characteristics. It's designed as part of the PoCRA assignment to model water distribution across various processes like runoff, infiltration, soil moisture, crop uptake, and groundwater recharge.
 
@@ -20,7 +20,7 @@ Based on the **soil type** input: `"deep"` or `"shallow"`.
 ---
 
 
-## 🧪 Soil Types
+## Soil Types
 
 | Type     | Moisture Holding Capacity (C) | Groundwater Fraction (γ) |
 |----------|-------------------------------|---------------------------|
@@ -29,7 +29,7 @@ Based on the **soil type** input: `"deep"` or `"shallow"`.
 
 ---
 
-## 💧 Water Balance Formula
+## Water Balance Formula
 
 For each day `n`:
 
