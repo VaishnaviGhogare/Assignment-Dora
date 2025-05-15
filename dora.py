@@ -46,6 +46,7 @@ def water_balance(soil_type, rainfall_data):
         sm -= uptake
 
         gw = gw_fraction * sm
+        sm = sm - gm ##try this. further debugging is needed
 
         records.append({
             "Day": day,
@@ -76,7 +77,7 @@ def main():
         return
 
     try:
-        rainfall_data = pd.read_csv('daily_rainfall_jalgaon_chalisgaon_talegaon_.csv')['rain_mm'].values
+        rainfall_data = pd.read_csv('daily_rainfall_jalgaon_chalisgaon_talegaon_2022.csv')['rain_mm'].values
     except FileNotFoundError:
         print("📁 Error: 'daily_rainfall_jalgaon_chalisgaon_talegaon_2022.csv' not found.")
         return
